@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import type { Employee } from '../types'
+import { Link } from 'lucide-react'
 
 interface EmployeeInputProps {
   onSubmit: (employees: Employee[]) => void
@@ -75,6 +76,9 @@ export function EmployeeInput({ onSubmit }: EmployeeInputProps) {
             </div>
           </div>
           <Button type="submit" className="w-full">Cập nhật danh sách</Button>
+          <div onClick={() => {
+            window.location.href = 'https://github.com/dnghiald1998/lucky'
+          }} className="text-blue-500 cursor-pointer text-3xl">Link source code Github</div>
         </form>
       </CardContent>
     </Card>

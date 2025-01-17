@@ -17,7 +17,7 @@ export function PrizeConfig({ prizes, onUpdate }: PrizeConfigProps) {
   const addPrize = () => {
     onUpdate([
       ...prizes,
-      { id: Math.random().toString(36).slice(2), name: '', enabled: true }
+      { id: Math.random().toString(36).slice(2), name: '', enabled: true, numberPrizes: 1 }
     ])
   }
 
